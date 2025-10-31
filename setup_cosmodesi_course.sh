@@ -15,6 +15,7 @@ pip install \
   git+https://github.com/cosmodesi/pycorr#egg=pycorr[corrfunc] \
   git+https://github.com/cosmodesi/pyrecon#egg=pyrecon[extras] \
   git+https://github.com/cosmodesi/pypower#egg=pypower \
+  git+https://github.com/adematti/pyclass \
   cobaya==3.5.7
 
 echo ">>> Installing JAX ecosystem and scientific stack"
