@@ -24,15 +24,24 @@
 # Installation instruction for the DESI conda environment
 
 (1) First of all, you will need conda installed. For Linux or macOS you can do:
-
-`$ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh`
-`$ bash Miniconda3-latest-Linux-x86_64.sh`
+```sh
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+$ bash Miniconda3-latest-Linux-x86_64.sh
+```
 
 (2) After your conda is active, you can simply do:
-`$ bash setup_cosmodesi_course.sh`
+```sh
+bash setup_cosmodesi_course.sh`
+```
 
 (3) Activate your new environment as
-`$ conda activate cosmodesi_course`
+```sh
+conda activate cosmodesi_course
+```
 
 (4) If everything is successful, you can then simply run the test.py as:
-`$ python test.py`
+```sh
+python test.py
+```
+
+You should see that **tests pass!**
