@@ -25,7 +25,7 @@ pip install --no-deps \
 
 echo ">>> Installing JAX (CPU)"
 pip install --no-deps jax==0.4.23 jaxlib==0.4.23 jaxopt==0.8.3 optax==0.1.8 \
-  jaxtyping==0.2.25 ml_dtypes==0.5.3
+  jaxtyping==0.2.25 ml_dtypes==0.5.3 pexpect==4.9.0
 
 echo ">>> Installing Jupyter and helpers"
 pip install --no-deps jupyterlab notebook ipywidgets seaborn tabulate
