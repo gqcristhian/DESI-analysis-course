@@ -14,7 +14,9 @@ pip install jupyterlab notebook ipywidgets seaborn tabulate
 echo ">>> Installing core scientific packages"
 pip install --no-deps \
   numpy==1.26.4 scipy==1.12.0 matplotlib==3.10.6 pandas==2.1.4 \
-  h5py==3.14.0 mpi4py==4.1.0 getdist==1.7.0 fitsio==1.2.8 opt_einsum==3.4.0
+  h5py==3.14.0 mpi4py==4.1.0 getdist==1.7.0 fitsio==1.2.8 opt_einsum==3.4.0 interpax==0.2.4 \
+  equinox==0.11.3 typeguard==2.13.3 pmesh==0.1.56 pfft-python mpsort==0.1.17 \
+  chex==0.1.90 absl-py==2.3.1 toolz==1.1.0 lineax==0.0.8 \
 
 # 3️⃣ Install pyclass first
 pip install --no-deps git+https://github.com/adematti/pyclass
