@@ -5,9 +5,6 @@ echo ">>> Creating conda environment: cosmodesi_course"
 conda create -n cosmodesi_course python=3.10 -y
 conda activate cosmodesi_course || source "$(conda info --base)/etc/profile.d/conda.sh" && conda activate cosmodesi_course
 
-echo ">>> Installing JAX (CPU)"
-pip install jax==0.4.23 jaxlib==0.4.23
-
 echo ">>> Installing DESI cosmology stack"
 pip install \
   git+https://github.com/cosmodesi/cosmoprimo#egg=cosmoprimo[class,camb,astropy,extras] \
@@ -19,9 +16,12 @@ pip install \
   cobaya==3.5.7
 
 echo ">>> Installing JAX ecosystem and scientific stack"
-pip install \
-  jaxtyping==0.2.25 ml_dtypes==0.5.3 jaxopt==0.8.3 optax==0.1.8 pyclass==1.3.0 \
+pip install --no-deps \
+  jaxtyping==0.2.25 ml_dtypes==0.5.3 \
   numpy==1.26.4 scipy==1.12.0 matplotlib==3.10.6 pandas==2.1.4 h5py==3.14.0 mpi4py==4.1.0 getdist==1.7.0 fitsio==1.2.8
+
+echo ">>> Installing JAX (CPU)"
+pip install jax==0.4.23 jaxlib==0.4.23 jaxopt==0.8.3 optax==0.1.8 --no-deps
 
 echo ">>> Installing Jupyter and helpers"
 pip install jupyterlab notebook ipywidgets seaborn tabulate
