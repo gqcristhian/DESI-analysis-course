@@ -86,17 +86,21 @@ print("\n✅ Environment test completed.")
 
 # Optional: make a simple BAO plot test
 try:
-    from desilike.theories.galaxy_clustering import FlexibleBAOWigglesTracerPowerSpectrumMultipoles
-    theory = FlexibleBAOWigglesTracerPowerSpectrumMultipoles(z=0.5)
-    k = np.logspace(-2, 0, 100)
-    pk = theory(k, p={'qiso': 1.0, 'bias': 2.0})[0]
-    plt.plot(k, pk)
-    plt.xscale('log')
+
+    from desilike.theories.galaxy_clustering import BAOPowerSpectrumTemplate, FlexibleBAOWigglesTracerPowerSpectrumMultipoles
+    import numpy as np
+    import matplotlib.pyplot as plt
+    k = np.logspace(-3, 1, 300)
+    z = 0.3
+    template = BAOPowerSpectrumTemplate(z=z, fiducial='DESI', apmode='qiso')
+    theory = FlexibleBAOWigglesTracerPowerSpectrumMultipoles(template=template, ells=(0,), k=k)
+    pk = theory(qiso=1.0, b1=2.0)[0]
+    plt.loglog(k, k*pk)
     plt.xlabel(r'$k\ [h\,\mathrm{Mpc}^{-1}]$')
-    plt.ylabel(r'$P(k)$')
+    plt.ylabel(r'$k P(k)$')
     plt.title("BAO template quick check")
     plt.tight_layout()
     plt.savefig("test_bao.png")
-    print("  ✓ BAO plot generated: test_bao.png")
+    print("   ✅ BAO plot generated: test_bao.png")
 except Exception as e:
     print(f"  ⚠️ Could not generate BAO plot: {e}")
