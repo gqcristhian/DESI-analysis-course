@@ -51,23 +51,30 @@ python test.py
 You should see that **tests pass!**
 
 # Preparation in advance
-Make sure you have few Gb (~5Gb, blame the random catalogs!) of disk space free and if you want to explore the catalogs please visit:
+In case you want to follow what I will show, please make sure you have few Gb (~4Gb, blame the random catalogs!) of disk space free. If you want to explore the catalogs please visit:
 https://data.desi.lbl.gov/public/dr1/survey/catalogs/dr1/LSS/iron/LSScats/v1.5/
 
-I suggest to download:
-- LRG_SGC_0_clustering.ran.fits 
-- LRG_NGC_0_clustering.ran.fits 
-- BGS_BRIGHT-21.5_SGC_0_clustering.ran.fits 
-- BGS_BRIGHT-21.5_NGC_0_clustering.ran.fits 
-- LRG_NGC_clustering.dat.fits 
+Where you can try to download in advance:
 - BGS_BRIGHT-21.5_SGC_clustering.dat.fits 
-- ELG_LOPnotqso_NGC_clustering.dat.fits 
-- LRG_SGC_clustering.dat.fits
-- LRG+ELG_LOPnotqso_NGC_clustering.dat.fits
-- BGS_BRIGHT-21.5_full_HPmapcut.dat.fits
-- QSO_SGC_clustering.dat.fits
-- ELG_LOPnotqso_SGC_clustering.dat.fits
-- QSO_NGC_clustering.dat.fits
 - BGS_BRIGHT-21.5_NGC_clustering.dat.fits
-- LRG+ELG_LOPnotqso_SGC_clustering.dat.fits
+- BGS_BRIGHT-21.5_full_HPmapcut.dat.fits (not really needed!)
 
+- LRG_SGC_clustering.dat.fits
+- LRG_NGC_clustering.dat.fits
+- LRG_SGC_0_clustering.ran.fits 
+- LRG_NGC_0_clustering.ran.fits
+  
+- LRG+ELG_LOPnotqso_SGC_clustering.dat.fits
+- LRG+ELG_LOPnotqso_NGC_clustering.dat.fits
+  
+- ELG_LOPnotqso_SGC_clustering.dat.fits
+- ELG_LOPnotqso_NGC_clustering.dat.fits
+  
+- QSO_SGC_clustering.dat.fits
+- QSO_NGC_clustering.dat.fits
+  
+
+That can be done as simply as
+```sh
+wget -N https://data.desi.lbl.gov/public/dr1/survey/catalogs/dr1/LSS/iron/LSScats/v1.5/LRG_NGC_clustering.dat.fits 
+```
