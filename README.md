@@ -21,11 +21,11 @@ General talk
 (Special thanks goes to Arnaud DeMattia for his help with the various scripts)
 
 
-# For Linux or macOS
+# Installation instruction for the DESI conda environment
+First of all, you will need conda installed
+
+### For Linux or macOS
+```bash
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
-# then restart your terminal
 
-# For macOS (Apple Silicon)
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh
-bash Miniconda3-latest-MacOSX-arm64.sh
