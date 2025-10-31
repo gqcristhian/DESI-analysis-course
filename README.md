@@ -23,7 +23,7 @@
 
 # Installation instruction for the DESI conda environment
 
-[ONLY IF YOU DON'T HAVE CONDA, OTHERWISE SKIP (1)]
+*If you already have CONDA, skip step (1)*
 
 (1) First of all, you will need conda installed. For Linux or macOS you can do:
 ```sh
