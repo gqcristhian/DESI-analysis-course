@@ -24,6 +24,7 @@
 # Installation instruction for the DESI conda environment
 
 [ONLY IF YOU DON'T HAVE CONDA, OTHERWISE SKIP (1)]
+
 (1) First of all, you will need conda installed. For Linux or macOS you can do:
 ```sh
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
