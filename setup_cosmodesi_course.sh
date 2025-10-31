@@ -19,7 +19,7 @@ pip install \
 
 echo ">>> Installing JAX ecosystem and scientific stack"
 pip install \
-  equinox==0.11.3 optax==0.1.8 chex==0.1.90 lineax==0.0.8 jaxtyping==0.2.25 ml_dtypes==0.5.3 jaxopt==0.8.3 \
+  jaxtyping==0.2.25 ml_dtypes==0.5.3 jaxopt==0.8.3 \
   numpy==1.26.4 scipy==1.12.0 matplotlib==3.10.6 pandas==2.1.4 h5py==3.14.0 mpi4py==4.1.0 getdist==1.7.0 fitsio==1.2.8
 
 echo ">>> Installing Jupyter and helpers"
